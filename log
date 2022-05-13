@@ -71,3 +71,36 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 d095f44
+Fri May 13 15:13:41 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:101:18: error: expected expression before ‘{’ token
+       array [10]={};
+                  ^
+sudoku.c:107:31: error: stray ‘\302’ in program
+         if(valor != 0 && array¨[valor-1] == 1)
+                               ^
+sudoku.c:107:32: error: stray ‘\250’ in program
+         if(valor != 0 && array¨[valor-1] == 1)
+                                ^
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c:262:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+ char * _strdup(const char * str) {
+        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+26c4dd6
