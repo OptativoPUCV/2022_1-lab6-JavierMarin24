@@ -342,3 +342,14 @@ Fri May 13 15:36:27 UTC 2022:
  tests:  5|3
 total_score: 35/70
 5807d59
+Fri May 13 15:42:01 UTC 2022: 
+ sudoku.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:73:11: error: ‘array’ undeclared (first use in this function)
+           array[k]=0;
+           ^~~~~
+sudoku.c:73:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c42cea3

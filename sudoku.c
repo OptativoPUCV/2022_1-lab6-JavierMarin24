@@ -44,14 +44,16 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int array[10];
+  
   int i,j,k;
   int valor;
   //revisión por columnas
   for(j=0; j<9 ;j++)
     {
+      
         for(i=0 ; i<9 ; i++)
         {
+          int *array=(int *)calloc(10,sizeof(int));
           valor = n->sudo[i][j];
           if(array[valor] == 1)
           {
@@ -75,6 +77,7 @@ int is_valid(Node* n){
     //revisión por filas
     for(i=0; i<9 ; i++)
     {
+      int *array=(int *)calloc(10,sizeof(int));
       for(j=0; j<9 ; j++)
       {
         valor = n->sudo[i][j];
