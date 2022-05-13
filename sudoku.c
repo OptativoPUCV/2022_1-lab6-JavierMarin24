@@ -96,6 +96,7 @@ int is_valid(Node* n){
         array[k]=0;
       }  
     }
+  //Revisión por submatriz
     for(k=0 ; k<9 ; k++)
     {
       int array[10] = {};
@@ -141,10 +142,9 @@ List* get_adj_nodes(Node* n){
             }
               
           }
+        }
           n->sudo[i][j] =0;
           return list;
-        }
-
       }
       
     }
