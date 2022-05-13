@@ -180,6 +180,7 @@ Node* DFS(Node* initial, int* cont){
       nodo= top(stack);
       pop(stack);
       *cont = *cont -1;
+      if(is_final(nodo)==10) return NULL;
       if(is_final(nodo)==1)
       {
         return nodo;
