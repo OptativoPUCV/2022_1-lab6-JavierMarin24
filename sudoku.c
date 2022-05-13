@@ -91,11 +91,12 @@ int is_valid(Node* n){
     }
     for(k=0 ; k<9 ; k++)
     {
-      valor = n->sudo[i][j];
-      for(p=0;p<9;p++)
+      
+      for(int p=0;p<9;p++)
       {
-          int i=3*(k/3) + (p/3) ;
-          int j=3*(k%3) + (p%3) ;
+        int i=3*(k/3) + (p/3) ;
+        int j=3*(k%3) + (p%3) ;
+        valor = n->sudo[i][j];
         if(array[valor-1] == 1)
         {
           return 0 ;
