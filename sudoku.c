@@ -68,10 +68,10 @@ int is_valid(Node* n){
           }
       
         } 
-        for(int k = 0 ; k<10 ; k++)
+       /* for(int k = 0 ; k<10 ; k++)
         {
           array[k]=0;
-        }   
+        }  */ 
     
     }
     //revisión por filas
@@ -94,10 +94,10 @@ int is_valid(Node* n){
           
         }
       }
-      for(int k = 0 ; k<10 ; k++)
+      /*for(int k = 0 ; k<10 ; k++)
       {
         array[k]=0;
-      }  
+      }  */
     }
   //Revisión por submatriz
     for(k=0 ; k<9 ; k++)
