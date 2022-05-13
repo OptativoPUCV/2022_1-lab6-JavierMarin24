@@ -127,7 +127,6 @@ List* get_adj_nodes(Node* n){
     unsigned int valor;
     for(i=0 ; i<9 ; i++)
     {
-      valor=1;
       for(j=0 ; j<9 ;j++)
       {
         if(n->sudo[i][j] == 0)
@@ -143,7 +142,7 @@ List* get_adj_nodes(Node* n){
               
           }
           n->sudo[i][j] =0;
-          return list;
+          //return list;
         }
 
       }
