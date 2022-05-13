@@ -114,12 +114,9 @@ int is_valid(Node* n){
           {
             array[valor] = 1;
           }
-        }
-        
-        
-       
+        } 
+      }  
     }
-  
     return 1;
 }
 
