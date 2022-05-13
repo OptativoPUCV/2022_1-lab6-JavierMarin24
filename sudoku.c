@@ -133,9 +133,9 @@ List* get_adj_nodes(Node* n){
         {
           for(valor=1 ; valor<10 ; valor++)
           {
+            n->sudo[i][j] = valor;
             if(is_valid(n))
             {
-              n->sudo[i][j] = valor;
               Node* adj = copy(n);
               pushBack(list, adj);
             }
