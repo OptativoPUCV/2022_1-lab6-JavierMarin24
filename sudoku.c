@@ -50,26 +50,26 @@ int is_valid(Node* n){
   //revisión por columnas
   for(j=0; j<9 ;j++)
     {
-      for(i=0 ; i<9 ; i++)
-      {
-        valor = n->sudo[i][j];
-        if(array[valor] == 1)
+        for(i=0 ; i<9 ; i++)
         {
-          return 0 ;
-        }
-        else
-        {
-          if(valor!=0)
+          valor = n->sudo[i][j];
+          if(array[valor] == 1)
           {
-            array[valor] = 1;
+            return 0 ;
           }
-        }
-    
-      } 
-      for(int k = 0 ; k<10 ; k++)
-      {
-        array[k]=0;
-      }   
+          else
+          {
+            if(valor!=0)
+            {
+              array[valor] = 1;
+            }
+          }
+      
+        } 
+        for(int k = 0 ; k<10 ; k++)
+        {
+          array[k]=0;
+        }   
     
     }
     //revisión por filas
@@ -98,13 +98,13 @@ int is_valid(Node* n){
     }
     for(k=0 ; k<9 ; k++)
     {
-      array [10]= {};
+      array[10]= {};
       for(int p=0;p<9;p++)
       {
         int i=3*(k/3) + (p/3) ;
         int j=3*(k%3) + (p%3) ;
         valor = n->sudo[i][j];
-        if(valor != 0 && array[valor-1] == 1)
+        if(valor != 0 && array[valor] == 1)
         {
           return 0;
         }
@@ -112,7 +112,7 @@ int is_valid(Node* n){
         {
           if(valor != 0)
           {
-            array[valor-1] = 1;
+            array[valor] = 1;
           }
         }
         
