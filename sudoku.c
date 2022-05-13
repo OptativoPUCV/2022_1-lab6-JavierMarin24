@@ -78,7 +78,7 @@ int is_valid(Node* n){
       for(j=0; j<9 ; j++)
       {
         valor = n->sudo[i][j];
-        if(array[valor-1] == 1)
+        if(array[valor] == 1)
         {
           return 0 ;
         }
