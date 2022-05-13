@@ -53,7 +53,7 @@ int is_valid(Node* n){
       for(i=0 ; i<9 ; i++)
       {
         valor = n->sudo[i][j];
-        if(array[valor-1] == 1)
+        if(array[valor] == 1)
         {
           return 0 ;
         }
@@ -61,7 +61,7 @@ int is_valid(Node* n){
         {
           if(valor!=0)
           {
-            array[valor-1] = 1;
+            array[valor] = 1;
           }
         }
     
@@ -86,7 +86,7 @@ int is_valid(Node* n){
         {
           if(valor!=0)
           {
-           array[valor-1] = 1 ;      
+           array[valor] = 1 ;      
           }
           
         }
@@ -98,7 +98,7 @@ int is_valid(Node* n){
     }
     for(k=0 ; k<9 ; k++)
     {
-      array [10]={};
+      array [10]= {};
       for(int p=0;p<9;p++)
       {
         int i=3*(k/3) + (p/3) ;
