@@ -127,8 +127,7 @@ List* get_adj_nodes(Node* n){
     int i,j ;
     for(i=0 ; i<9 ; i++)
     {
-      int valor=1;
-      //unsigned int valor = 1;
+      //int valor = 1;
       for(j=0 ; j<9 ;j++)
       {
         if(n->sudo[i][j] == 0)
